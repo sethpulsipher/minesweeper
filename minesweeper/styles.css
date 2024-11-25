@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#game-container {
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#game-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-gap: 1px;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #ddd;
+}
+
+.revealed {
+    background-color: #fff;
+}
+
+.mine {
+    background-color: #f00;
+}
+
+.flagged {
+    background-color: #ff0;
+}
